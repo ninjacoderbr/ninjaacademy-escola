@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NinjaAcademy - Plataforma de cursos de tecnologia, design e negócios. Estude com mentoria individual e conquiste sua certificação.">
+  <title>NinjaAcademy | Cursos de Elite & Certificação</title>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo" id="logo">
+        <i class="fa-solid fa-graduation-cap"></i> Ninja<span>Academy</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#simulador">Matrícula Online</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="section-tag">Acelere sua Carreira</span>
+        <h1 class="hero-title">Domine as Habilidades do <span>Futuro Digital</span></h1>
+        <p class="hero-desc">
+          Cursos online práticos estruturados com mentores especialistas. Estude tecnologia, UX design ou gestão de negócios e atinja o próximo nível de empregabilidade.
+        </p>
+        <div>
+          <a href="#cursos" class="btn-primary" id="explore-btn"><i class="fa-solid fa-arrow-right" style="margin-right: 8px;"></i> Explorar Cursos</a>
+          <a href="#simulador" class="btn-secondary" id="sim-btn"><i class="fa-solid fa-calculator" style="margin-right: 8px;"></i> Simular Investimento</a>
+        </div>
+        <div class="stats-bar">
+          <div class="stat-item">
+            <h4>15k+</h4>
+            <p>Alunos Ativos</p>
+          </div>
+          <div class="stat-item">
+            <h4>94%</h4>
+            <p>Empregabilidade</p>
+          </div>
+          <div class="stat-item">
+            <h4>4.8/5</h4>
+            <p>Avaliação Média</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <!-- SVG Graphic decoration for premium tech feel -->
+        <svg viewBox="0 0 400 400" width="100%" style="max-width: 400px; filter: drop-shadow(var(--shadow-glow-purple));">
+          <circle cx="200" cy="200" r="150" fill="none" stroke="url(#purpleGrad)" stroke-width="4" stroke-dasharray="10, 5" />
+          <circle cx="200" cy="200" r="120" fill="rgba(124, 58, 237, 0.05)" />
+          <polygon points="200,80 320,160 320,290 200,370 80,290 80,160" fill="none" stroke="url(#orangeGrad)" stroke-width="2" />
+          <!-- Animated element style icon -->
+          <g transform="translate(160, 160)">
+            <rect width="80" height="80" rx="15" fill="var(--bg-card)" stroke="var(--color-primary)" stroke-width="3" />
+            <path d="M25 40 L35 50 L55 30" fill="none" stroke="var(--color-accent)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+          <defs>
+            <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#7c3aed" />
+              <stop offset="100%" stop-color="#120b2d" />
+            </linearGradient>
+            <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f97316" />
+              <stop offset="100%" stop-color="#ea580c" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Explorer Section -->
+  <section class="courses-section" id="cursos">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-tag">Nossas Formações</span>
+        <h2 class="section-title">Encontre seu Próximo Passo</h2>
+        <p class="section-desc">Filtre por categoria ou pesquise diretamente o tema de seu interesse em nosso catálogo de formações aceleradas.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-bar">
+        <div class="search-input-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" class="search-input" id="search-course" placeholder="Pesquisar por título ou descrição...">
+        </div>
+        <select class="filter-select" id="category-filter">
+          <option value="all">Todas Categorias</option>
+          <option value="tech">Tecnologia & Dev</option>
+          <option value="design">UX/UI & Design</option>
+          <option value="business">Negócios & Marketing</option>
+        </select>
+      </div>
+
+      <!-- Courses Grid -->
+      <div class="courses-grid" id="courses-grid">
+        <!-- JS dynamically renders cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Enrollment Simulator Section -->
+  <section class="simulator-section" id="simulador">
+    <div class="container">
+      <div class="sim-grid">
+        <!-- Simulator Info -->
+        <div class="sim-info">
+          <span class="section-tag">Matrícula Inteligente</span>
+          <h2>Planeje seu Investimento sem Compromisso</h2>
+          <p>
+            Escolha o curso ideal, selecione o plano de pagamento com descontos progressivos e adicione complementos de mentoria dedicada.
+          </p>
+
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-text">
+              <h4>Escolha da Frequência</h4>
+              <p>Os planos semestral e anual concedem descontos de 10% e 20% sobre as mensalidades base.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-text">
+              <h4>Suporte Customizado</h4>
+              <p>Adicione mentorias individuais ao vivo semanalmente para acelerar o aprendizado prático.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-text">
+              <h4>Acesso Imediato</h4>
+              <p>Faça a pré-matrícula para reservar sua vaga. O time acadêmico enviará os dados para início das aulas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulator Form & Interactive Card -->
+        <div class="sim-card">
+          <div class="alert-success" id="enrollment-success"></div>
+          
+          <form id="enrollment-form">
+            <div class="form-group">
+              <label class="form-label" for="student-name">Nome Completo</label>
+              <input type="text" class="form-input" id="student-name" required placeholder="Digite seu nome completo">
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="student-email">Endereço de E-mail</label>
+              <input type="email" class="form-input" id="student-email" required placeholder="nome@provedor.com">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sim-course">Selecione o Curso</label>
+              <select class="form-select" id="sim-course">
+                <!-- Loaded dynamically -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sim-plan">Escolha o Plano</label>
+              <select class="form-select" id="sim-plan">
+                <option value="monthly">Mensal Recorrente (Sem desconto)</option>
+                <option value="semiannual">Semestral (10% de desconto)</option>
+                <option value="annual">Anual Parcelado (20% de desconto)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Adicionais Extras</label>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
+                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                  <input type="checkbox" id="sim-mentorship" style="width: 18px; height: 18px; accent-color: var(--color-primary);">
+                  <span>Adicionar Mentoria Individual (+ R$ 99/mês)</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                  <input type="checkbox" id="sim-certificate" style="width: 18px; height: 18px; accent-color: var(--color-primary);">
+                  <span>Certificado Impresso de Conclusão (+ R$ 150 taxa única)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Pricing Breakdown -->
+            <div class="cost-breakdown">
+              <div class="cost-row">
+                <span>Mensalidade Base:</span>
+                <span id="breakdown-base">R$ 0,00</span>
+              </div>
+              <div class="cost-row">
+                <span>Desconto Especial:</span>
+                <span id="breakdown-discount" style="color: #10b981;">Nenhum</span>
+              </div>
+              <div class="cost-row">
+                <span>Adicionais Ativados:</span>
+                <span id="breakdown-addons">Nenhum</span>
+              </div>
+              <div class="cost-row total">
+                <span>Total Estimado:</span>
+                <span id="breakdown-total">R$ 0,00</span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 25px;">
+              <i class="fa-solid fa-user-plus" style="margin-right: 8px;"></i> Efetuar Pré-Matrícula
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-logo">
+        <i class="fa-solid fa-graduation-cap"></i> Ninja<span>Academy</span>
+      </div>
+      <div>
+        <p>&copy; 2026 NinjaAcademy. Todos os direitos reservados. Projeto Portfólio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
